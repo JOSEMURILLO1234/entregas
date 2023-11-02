@@ -19,8 +19,10 @@ class DelivActivity:AppCompatActivity() {
         deliverViewModel.onCreate()
 
         deliverViewModel.deliverModel.observe(this, Observer {resultDeliver ->
-            binding.Tjson.text=resultDeliver.authInfo.mail
+
         })
+
+
     }
 
 }

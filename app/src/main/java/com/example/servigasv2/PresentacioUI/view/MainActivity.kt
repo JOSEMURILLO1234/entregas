@@ -14,7 +14,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.ButtonIni.setOnClickListener(){
-            val intent=Intent(this, DelivActivity::class.java)
+            val intent=Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.ButtonRe.setOnClickListener(){
+            val intent=Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
