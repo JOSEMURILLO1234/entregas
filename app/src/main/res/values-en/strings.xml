@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">ServiGas</string>
+    <string name="app_user">Enter User</string>
+    <string name="app_passw">Enter Password</string>
+    <string name="app_email">Enter Email</string>
+    <string name="app_login">User Sign In</string>
+    <string name="app_login_r">Delivery Sign In</string>
+    <string name="app_Signup">Sign Up</string>
+    <string name="app_register" translatable="false">Register</string>
+    <string name="app_register_user">User</string>
+    <string name="app_register_re">Delivery</string>
+    <string name="app_validate_ur">Enter Code</string>
+    <string name="app_validate_placa">Enter Plate</string>
+    <string name="app_validate">Validate</string>
+    <string name="app_save_ubi">Save Location</string>
+    <string name="app_text_exit" translatable="false">logout</string>
+    <string name="app_text_NumberGas">Put</string>
+    <string name="app_make_gas">Make to Order</string>
+    <string name="app_pendins" translatable="false">Assignments</string>
+    <string name="app_hello">¡Wellcome Again!</string>
+    <string name="app_hello1">Nos alegramos de volver a verte</string>
+    <string name="app_infoacount">Account Information</string>
+    <string name="app_session" translatable="false">Start</string>
+    <string name="app_well" translatable="false">Wellcome to EntreGas</string>
+    <string name="app_Title" translatable="false">EntreGas</string>
+    <string name="app_register_as" translatable="false">Register as:</string>
+    <string name="app_contact" translatable="false">Cellphone Number </string>
+    <string name="app_driver" translatable="false">Vihicule</string>
+    <string name="app_brand" translatable="false">Brand</string>
+    <string name="app_Plate" translatable="false">Plate</string>
+
+
+</resources>

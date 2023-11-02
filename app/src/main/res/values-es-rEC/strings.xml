@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ServiGas</string>
+    <string name="app_user" translatable="false">Correo Electrónico</string>
+    <string name="app_passw" translatable="false">Contraseña</string>
+    <string name="app_email" translatable="false">Ingresar Email</string>
+    <string name="app_login" translatable="false">Cliente</string>
+    <string name="app_login_r" translatable="false">Repartidor</string>
+    <string name="app_Signup" translatable="false">Crear</string>
+    <string name="app_register" translatable="false">Registrarse</string>
+    <string name="app_register_user" translatable="false">Nombre/Apellido</string>
+    <string name="app_register_re" translatable="false">Repartidor</string>
+    <string name="app_validate_ur" translatable="false">Ingresar Codigo</string>
+    <string name="app_validate_placa" translatable="false">Ingresar Placa</string>
+    <string name="app_validate" translatable="false">Validar</string>
+    <string name="app_save_ubi" translatable="false">Guardar Ubicacion</string>
+    <string name="app_text_exit" translatable="false">Cerrar Sesion</string>
+    <string name="app_text_NumberGas" translatable="false">Coloque la Cantidad</string>
+    <string name="app_make_gas" translatable="false">Hacer Pedido</string>
+    <string name="app_pendins">Pendientes</string>
+    <string name="app_hello" translatable="false">¡Hola de Nuevo!</string>
+    <string name="app_hello1" translatable="false">Nos alegramos de volver a verte</string>
+    <string name="app_infoacount" translatable="false">Informacion de la Cuenta</string>
+    <string name="app_session">Iniciar Sesión</string>
+    <string name="app_well">Te damos la bienvenida a EntreGas</string>
+    <string name="app_Title">EntreGas</string>
+    <string name="app_register_as">Registrarse como:</string>
+    <string name="app_contact">Numero de Contacto</string>
+    <string name="app_driver">Datos del Vihiculo</string>
+    <string name="app_brand">Marca</string>
+    <string name="app_Plate">Placa</string>
+</resources>
