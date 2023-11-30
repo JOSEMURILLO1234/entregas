@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
+    android:textAlignment="center"
     tools:context=".PresentacioUI.view.RegisterActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        app:cardCornerRadius="10dp"
         app:cardElevation="8dp"
         app:strokeColor="@color/black"
-        app:strokeWidth="0dp"
-        app:cardCornerRadius="10dp">
+        app:strokeWidth="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +34,7 @@
 
 
             <TextView
-
+                android:id="@+id/prueba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -48,17 +50,50 @@
 
 
             <!--Nombre de usuario-->
-
-            <Switch
-                android:id="@+id/SwCR"
-                android:layout_width="322dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="27dp"
-                android:minHeight="48dp"
-                android:text="@string/app_login"
-                android:textAlignment="viewStart"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/ic_baseline_propane_tank_24" />
+
+                <TextView
+                    android:id="@+id/clientRegister"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:height="30dp"
+                    android:background="#F3F3F6"
+                    android:gravity="center"
+                    android:text="@string/app_login"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_baseline_departure_board_24" />
+                <TextView
+                    android:id="@+id/registerDriver"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:height="30dp"
+                    android:background="#F3F3F6"
+                    android:gravity="center"
+                    android:text="@string/app_login_r"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/FullNameTil"
@@ -73,11 +108,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
                     android:hint="@string/app_register_user"
                     android:inputType="text"
                     android:paddingHorizontal="8dp"
                     android:paddingVertical="12dp"
                     android:textColorHint="#757575"
+                    android:visibility="gone"
                     tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,8 +136,10 @@
                     android:paddingHorizontal="8dp"
                     android:paddingVertical="12dp"
                     android:textColorHint="#757575"
+                    android:visibility="gone"
                     tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/contactoTil"
@@ -132,6 +171,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
+                android:visibility="gone"
                 app:counterEnabled="true"
                 app:counterMaxLength="10"
                 app:passwordToggleEnabled="true">
@@ -146,7 +186,8 @@
                     android:inputType="textPassword"
                     android:maxLength="10"
                     android:paddingHorizontal="8dp"
-                    android:paddingVertical="12dp"/>
+                    android:paddingVertical="12dp"
+                    android:visibility="gone" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--confirmar contraseña-->
@@ -157,6 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
+                android:visibility="gone"
                 app:counterEnabled="true"
                 app:counterMaxLength="10"
                 app:passwordToggleEnabled="true">
@@ -171,13 +213,14 @@
                     android:inputType="textPassword"
                     android:maxLength="10"
                     android:paddingHorizontal="8dp"
-                    android:paddingVertical="12dp" />
+                    android:paddingVertical="12dp"
+                    android:visibility="gone" />
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <!--Marca-->
-            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            <TextView
                 android:id="@+id/txtdatsCar"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -231,27 +274,36 @@
                     android:visibility="gone" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <ProgressBar
+                android:id="@+id/Progres"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone" />
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/registerButton"
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="@string/app_Signup"
                 android:textAlignment="gravity"
                 android:textColor="#ECE1E1"
+
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
                 app:backgroundTint="#5256A8"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+
+                />
 
         </LinearLayout>
 
 
     </com.google.android.material.card.MaterialCardView>
-
 
 
 </LinearLayout>

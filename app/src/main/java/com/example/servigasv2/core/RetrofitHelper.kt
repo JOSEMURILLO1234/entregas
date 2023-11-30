@@ -12,7 +12,7 @@ object RetrofitHelper {
     fun getRetrofit(): Retrofit {
         val UserInterceptor= OkHttpClient.Builder().addInterceptor(HeaderInterface()).build()
         return Retrofit.Builder()
-            .baseUrl("https://d0xj9gbed6.execute-api.us-east-1.amazonaws.com")
+            .baseUrl("https://1tbbi0l6cj.execute-api.us-east-1.amazonaws.com")
             .client(UserInterceptor)
             .addConverterFactory(MoshiConverterFactory.create(
                     Moshi.Builder()

@@ -58,85 +58,113 @@
                 android:text="@string/app_hello1"
                 android:textColor="#8C8686" />
 
+            <!--usuario gmail-->
+
+
             <TextView
+                android:id="@+id/Cjason"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:minHeight="48dp"
-                android:paddingHorizontal="8dp"
+                android:paddingHorizontal="20dp"
                 android:paddingVertical="12dp"
                 android:text="@string/app_infoacount"
                 android:textSize="16sp" />
-            <!--usuario gmail-->
-
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailLoginTill"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/app_user"
                     android:inputType="text"
                     android:paddingHorizontal="8dp"
                     android:paddingVertical="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"/>
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
             </com.google.android.material.textfield.TextInputLayout>
             <!--contraseña-->
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contraseñaLoginTill"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contraseñaLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/app_passw"
                     android:inputType="textPassword"
                     android:paddingHorizontal="8dp"
                     android:paddingVertical="12dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.button.MaterialButton
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="match_parent"
+            <CheckBox
+                android:id="@+id/CheckDatos"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_propane_tank_24"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="@string/app_login"
-                android:textAlignment="center"
-                android:textColor="#ECE1E1"
-                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                app:backgroundTint="#5256A8"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="Recordar Informacion"
+                android:textColor="#989797">
 
-            <com.google.android.material.button.MaterialButton
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_fire_truck_24"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="@string/app_login_r"
-                android:textAlignment="gravity"
-                android:textColor="#ECE1E1"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                app:backgroundTint="#5256A8"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+            </CheckBox>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BotonLog"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_propane_tank_24"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/app_login"
+        android:textAlignment="center"
+        android:textColor="#ECE1E1"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#5256A8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerLogin"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_fire_truck_24"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/app_login_r"
+        android:textAlignment="gravity"
+        android:textColor="#ECE1E1"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#5256A8"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>
+
 
         </LinearLayout>
 
